@@ -63,13 +63,13 @@ exports.onCreateWebpackConfig = ({ actions }) => {
   actions.setWebpackConfig({
     module: {
       // needed to prevent "require is not defined" error
-      // rules: [
-      //   {
-      //     test: /\.mjs$/,
-      //     include: /node_modules/,
-      //     type: 'javascript/auto',
-      //   },
-      // ],
+      rules: [
+        {
+          test: /\.mjs$/,
+          include: /node_modules/,
+          type: 'javascript/auto',
+        },
+      ],
     },
     resolve: {
       extensions: ['.mjs', '.js', '.json'],
