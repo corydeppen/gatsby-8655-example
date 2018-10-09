@@ -10,7 +10,7 @@ const BlogPost = ({ data }) => {
   return (
     <Layout>
       <Helmet>
-        <title>{post.frontmatter.title}</title>
+        <title>{post.frontmatter.title} - Posts</title>
       </Helmet>
       <Container text style={{ marginTop: '7em' }}>
         <h1>{post.frontmatter.title}</h1>
